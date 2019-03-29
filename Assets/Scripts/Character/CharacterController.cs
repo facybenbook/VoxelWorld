@@ -2,8 +2,8 @@
 
 public class CharacterController : MonoBehaviour {
 
-    [SerializeField] private float moveSpeed = 2;
-    [SerializeField] private float jumpForce = 1;
+    [SerializeField] private readonly float moveSpeed = 2;
+    [SerializeField] private readonly float jumpForce = 1;
 
     private float m_currentV = 0;
     private float m_currentH = 0;

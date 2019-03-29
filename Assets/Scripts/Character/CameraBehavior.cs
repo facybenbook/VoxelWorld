@@ -85,7 +85,7 @@ public class CameraBehavior : MonoBehaviour
                 {
                     //Debug.Log("Clicked");
 
-                    hit.transform.parent.GetComponent<Chunk>().needsUpdate = true;
+                    //hit.transform.parent.GetComponent<Chunk>().needsUpdate = true;
                 }
             }
         }

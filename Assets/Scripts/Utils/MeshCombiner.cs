@@ -78,7 +78,7 @@ public class MeshCombiner
         meshFilterCombine.sharedMesh.CombineMeshes(combineInstances, false, false);
         meshFilterCombine.sharedMesh.RecalculateBounds();
         meshFilterCombine.sharedMesh.RecalculateNormals();
-        meshFilterCombine.gameObject.AddComponent<MeshCollider>();
+        //meshFilterCombine.gameObject.AddComponent<MeshCollider>();
 
         // Cleanup
         foreach (Mesh oldMesh in meshes)
@@ -92,7 +92,7 @@ public class MeshCombiner
 
         foreach (MeshFilter meshFilter in meshFilters)
         {
-            GameObject.DestroyImmediate(meshFilter);
+            GameObject.DestroyImmediate(meshFilter.gameObject);
         }
     }
 
